@@ -1,0 +1,43 @@
+name: Sync from upstream GreenPad
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # 毎日 2:00 UTC
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download base lang files from upstream
+        run: |
+          BASE_URL="https://raw.githubusercontent.com/Aile2017/GreenPad/main/lang"
+          for lang in en-US ja-JP zh-CN zh-TW ko-KR ru-RU; do
+            echo "Downloading $lang.lng ..."
+            curl -fsSL "$BASE_URL/$lang.lng" -o "lang/$lang.lng"
+          done
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Propagate new keys to additional languages
+        run: python .github/scripts/propagate_keys.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add lang/
+          if git diff --staged --quiet; then
+            echo "No changes detected."
+          else
+            git commit -m "chore: sync lang files from upstream GreenPad"
+            git push
+          fi
