@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-en-US.lng を参照として、追加言語ファイルに不足しているキーを
-[TODO] マーカー付きで挿入するスクリプト。
+Using en-US.lng as the reference, this script inserts missing keys
+into additional language files with a [TODO] marker.
 
-対象: BASE_LANGS 以外の lang/*.lng ファイル
+Target: lang/*.lng files except those listed in BASE_LANGS.
 """
 
 import os
@@ -25,7 +25,7 @@ def write_lines(path, lines):
 
 
 def parse_entries_ordered(lines):
-    """セクションごとにキーを順序つきで返す: {section: [(key, value), ...]}"""
+    """Return keys by section in order: {section: [(key, value), ...]}"""
     sections = {}
     current = None
     for line in lines:
@@ -60,7 +60,7 @@ def propagate(reference_lines, target_path):
 
     ref_section_order = get_section_order(reference_lines)
 
-    # 不足キーをセクションごとに収集 (参照ファイルでの出現順を保持)
+    # Collect missing keys by section while preserving reference order.
     missing_by_section = {}
     for section in ref_section_order:
         ref_pairs = ref_by_section.get(section, [])
@@ -77,7 +77,7 @@ def propagate(reference_lines, target_path):
     for section, entries in missing_by_section.items():
         section_header = f"[{section}]"
 
-        # セクションが target に存在するか検索
+        # Find whether the section exists in the target file.
         section_idx = None
         for i, line in enumerate(result):
             if line.strip() == section_header:
@@ -85,14 +85,14 @@ def propagate(reference_lines, target_path):
                 break
 
         if section_idx is None:
-            # セクションが無い場合はファイル末尾に追記
+            # If the section does not exist, append it to the end of the file.
             if result and result[-1].strip():
                 result.append("")
             result.append(section_header)
             for key, value in entries:
                 result.append(f"{key} = [TODO] {value}")
         else:
-            # セクション内の最後のエントリ行を探す
+            # Find the last entry line within the existing section.
             last_entry_idx = section_idx
             for i in range(section_idx + 1, len(result)):
                 s = result[i].strip()

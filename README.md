@@ -1,49 +1,49 @@
 # GreenPad Translations
 
-[GreenPad](https://github.com/Aile2017/GreenPad) テキストエディタの言語ファイルを管理するリポジトリです。
+[GreenPad](https://github.com/Aile2017/GreenPad) text editor language files are managed in this repository.
 
-本家リポジトリが管理する 6 言語（英語・日本語・中国語簡体字/繁体字・韓国語・ロシア語）に加えて、追加言語の翻訳を管理します。
+In addition to the 6 languages maintained in the upstream repository (English, Japanese, Chinese Simplified/Traditional, Korean, and Russian), this repository also maintains additional languages.
 
 ---
 
-## 収録言語
+## Included Languages
 
-| ファイル | 言語 |
+| File | Language |
 |---|---|
 | `en-US.lng` | English (United States) |
-| `ja-JP.lng` | 日本語 |
-| `zh-CN.lng` | 中文（简体） |
-| `zh-TW.lng` | 中文（繁體） |
-| `ko-KR.lng` | 한국어 |
-| `ru-RU.lng` | Русский |
-| `fr-FR.lng` | Français |
+| `ja-JP.lng` | Japanese |
+| `zh-CN.lng` | Chinese (Simplified) |
+| `zh-TW.lng` | Chinese (Traditional) |
+| `ko-KR.lng` | Korean |
+| `ru-RU.lng` | Russian |
+| `fr-FR.lng` | French |
 
 ---
 
-## 自動同期について
+## Automatic Synchronization
 
-GitHub Actions ([`.github/workflows/sync-upstream.yml`](.github/workflows/sync-upstream.yml)) により、毎日 2:00 UTC に本家リポジトリの言語ファイルが自動取得されます。
+GitHub Actions ([`.github/workflows/sync-upstream.yml`](.github/workflows/sync-upstream.yml)) automatically fetches language files from the upstream repository every day at 2:00 UTC.
 
-本家で新しいキーが追加された場合、追加言語ファイル（上記 6 言語以外）へ `[TODO]` マーカー付きで自動挿入されます。
+When new keys are added upstream, missing entries are automatically inserted into additional language files (languages other than the 6 upstream languages) with a `[TODO]` marker.
 
 ```ini
-# 例: 未訳の状態
+# Example: untranslated state
 IDS_NOTFOUNDUP = [TODO] String Not Found.\nContinue searching from the bottom?
 ```
 
-手動実行も可能です: Actions タブ → "Sync from upstream GreenPad" → "Run workflow"
+Manual execution is also available: Actions tab -> "Sync from upstream GreenPad" -> "Run workflow"
 
 ---
 
-## 翻訳への参加方法
+## How To Contribute Translations
 
-1. このリポジトリを fork する
-2. `lang/` 以下の対象ファイルを編集する
-   - 新規言語を追加する場合は `lang/xx-XX.lng` を作成し、`en-US.lng` を参考に翻訳する
-   - 既存ファイルの `[TODO]` 箇所を翻訳して `[TODO]` を削除する
-3. Pull Request を送る
+1. Fork this repository.
+2. Edit the target file under `lang/`.
+   - To add a new language, create `lang/xx-XX.lng` and translate based on `en-US.lng`.
+   - Translate `[TODO]` entries in existing files and remove the `[TODO]` marker.
+3. Submit a pull request.
 
-### 言語ファイルの形式
+### Language File Format
 
 ```ini
 # GreenPad Language File
@@ -65,12 +65,12 @@ IDS_APPNAME = GreenPad
 ...
 ```
 
-- エンコーディングは **UTF-8**
-- `[Info]` セクションの `Language` と `LangCode` は対象言語に合わせて記述する
-- キーは変更しない。値のみ翻訳する
+- Use **UTF-8** encoding.
+- Set `Language` and `LangCode` in the `[Info]` section for the target language.
+- Do not modify keys. Translate values only.
 
 ---
 
-## ライセンス
+## License
 
-本家 [GreenPad](https://github.com/Aile2017/GreenPad) のライセンスに準じます。
+This repository follows the license of upstream [GreenPad](https://github.com/Aile2017/GreenPad).
