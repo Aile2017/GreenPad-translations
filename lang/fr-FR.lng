@@ -26,7 +26,7 @@ IDS_INVALIDCP = Codepage invalide sélectionnée !
 IDS_MODIFIEDOUT = Le fichier a été modifié en dehors de GreenPad !\nLe recharger ?
 IDS_ZOOMPC = Zoom
 IDS_UNTITLED = sans titre
-IDS_CHARSET_CAPTION = Encodage des caractères :
+IDS_CHARSET_CAPTION = Encodage :
 IDS_CRLF_CAPTION = Fin de ligne :
 IDS_NOTFOUNDUP = Chaîne non trouvée.\nContinuer la recherche depuis la fin ?
 IDS_NOTFOUND_SELDOWN = Chaîne non trouvée dans la sélection.\nContinuer depuis le début de la sélection ?
@@ -76,11 +76,11 @@ ID_CMD_QUOTE = &Citer\tAlt+Q
 ID_CMD_UNQUOTE = &Retirer les guillemets\tAlt+N
 ID_CMD_FIND = &Rechercher\tCtrl+F
 ID_CMD_FINDNEXT = Rechercher le s&uivant\tF3
-ID_CMD_FINDPREV = Rechercher le &précédent\tShift+F3
+ID_CMD_FINDPREV = Chercher &prec.\tShift+F3
 ID_CMD_JUMP = &Aller à la ligne\tCtrl+J
 ID_CMD_GREP = &Grep...\tCtrl+G
 ID_CMD_OPENSELECTION = &Ouvrir la sélection...\tF7
-ID_CMD_NOWRAP = &Pas de retour à la ligne\tCtrl+1
+ID_CMD_NOWRAP = &Sans retour ligne\tCtrl+1
 ID_CMD_WRAPWIDTH = Retour à la ligne &automatique\tCtrl+2
 ID_CMD_WRAPWINDOW = Retour à la ligne au &bord droit\tCtrl+3
 ID_CMD_ZOOMDLG = &Paramètres de zoom...
@@ -97,10 +97,10 @@ ID_CMD_INSERTUNI = Insérer U&nicode...\tCtrl+I
 ID_CMD_EXFILTER = Filtre e&xterne...\tCtrl+\
 
 [Dialog.IDD_REOPENDLG]
-Caption = Réouvrir le fichier
+Caption = Reouvrir fichier
 IDOK = OK
 IDCANCEL = Annuler
-static.0 = &Encodage des caractères :
+static.0 = &Encodage :
 
 [Dialog.IDD_JUMP]
 Caption = Aller à la ligne
@@ -110,12 +110,12 @@ IDC_LINLABEL = &Ligne
 [Dialog.IDD_FINDREPLACE]
 Caption = Rechercher et remplacer
 ID_FINDNEXT = &Rechercher
-ID_FINDPREV = Rechercher le &précédent
+ID_FINDPREV = &Precedent
 ID_REPLACENEXT = &Remplacer
 ID_REPLACEALL = Remplacer &tout
 IDCANCEL = Fermer
 IDC_IGNORECASE = &Ignorer la casse
-IDC_REGEXP = &Expression régulière
+IDC_REGEXP = &Regex
 static.0 = &Rechercher :
 static.1 = &Remplacer par :
 static.2 = &Options

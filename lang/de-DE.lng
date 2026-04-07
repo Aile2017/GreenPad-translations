@@ -74,7 +74,7 @@ ID_CMD_TTSPACES = Nachgestellte Leerzeichen &entfernen\tAlt+W
 ID_CMD_SFCHAR = Erste Zeichen ent&fernen\tAlt+Z
 ID_CMD_SLCHAR = Letzte Zeichen entfer&nen\tAlt+A
 ID_CMD_QUOTE = &In Anfuehrungszeichen\tAlt+Q
-ID_CMD_UNQUOTE = Anfuehrungszeichen ent&fernen\tAlt+N
+ID_CMD_UNQUOTE = Quotes ent&f.\tAlt+N
 ID_CMD_EXFILTER = E&xterner Filter...\tCtrl+\
 ID_CMD_FIND = &Suchen\tCtrl+F
 ID_CMD_FINDNEXT = Weite&rsuchen\tF3
@@ -96,7 +96,7 @@ ID_CMD_HELP = &Kontexthilfe...\tF1
 ID_CMD_HELPABOUT = &Info
 
 [Dialog.IDD_REOPENDLG]
-Caption = Datei erneut oeffnen
+Caption = Datei neu oeffnen
 IDOK = OK
 IDCANCEL = Abbrechen
 static.0 = &Zeichenkodierung:
@@ -112,9 +112,9 @@ ID_FINDNEXT = &Suchen
 ID_FINDPREV = Vorheriges Su&chen
 ID_REPLACENEXT = &Ersetzen
 ID_REPLACEALL = Alle e&rsetzen
-IDCANCEL = Schliessen
+IDCANCEL = Schliess.
 IDC_IGNORECASE = Gross-/Kleinschreibung &ignorieren
-IDC_REGEXP = Regulaerer Aus&druck
+IDC_REGEXP = Reg.&Ausdruck
 static.0 = Su&chen:
 static.1 = E&rsetzen:
 static.2 = &Optionen
@@ -127,7 +127,7 @@ IDCANCEL = Abbrechen
 
 [Dialog.IDD_ABOUTDLG]
 Caption = Ueber GreenPad
-IDCANCEL = Schliessen
+IDCANCEL = Schliess.
 
 [Dialog.IDD_ADDDOCTYPE]
 Caption = Neuer Dokumenttyp
@@ -146,10 +146,10 @@ IDC_COUNTBYLETTER2 = Positionen
 IDC_OPENSAME = Im selben &Fenster oeffnen
 IDC_REMSIZE = Fenster&groesse merken
 IDC_REMPLACE = Fenster&position merken
-IDC_NEWDOCTYPE = Hinzufuegen
-IDC_DELDOCTYPE = Loeschen
-IDC_EDITKWD = bearbeiten
-IDC_EDITLAY = bearbeiten
+IDC_NEWDOCTYPE = Neu
+IDC_DELDOCTYPE = Loesch
+IDC_EDITKWD = Edit
+IDC_EDITLAY = Edit
 static.0 = Allgemein
 static.1 = &Rueckgaengig:
 static.2 = mal
