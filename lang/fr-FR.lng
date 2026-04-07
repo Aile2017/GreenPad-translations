@@ -1,0 +1,150 @@
+# GreenPad Language File
+# Language: French (France)
+# Encoding: UTF-8
+
+[Info]
+Language = French
+LangCode = fr-FR
+
+[Strings]
+IDS_ASKTOSAVE = Voulez-vous enregistrer le fichier actuel ?
+IDS_APPNAME = GreenPad
+IDS_SAVEERROR = Impossible d'enregistrer le fichier :
+IDS_ALLFILES = Tous les fichiers(*.*)
+IDS_TXTFILES = Fichiers texte
+IDS_OPENERROR = Impossible d'ouvrir le fichier :
+IDS_DEFAULT = (par défaut)
+IDS_NOTFOUND = Chaîne non trouvée.
+IDS_REPLACEALLDONE = %d fois remplacé.
+IDS_OKTODEL = sera supprimé. OK ?
+IDS_LOADING = Chargement du fichier...
+IDS_NOTFOUNDDOWN = Chaîne non trouvée.\nContinuer la recherche depuis le début ?
+IDS_NOWRITEACESS = \nAccès en écriture refusé !\n\nOuvrir en tant qu'administrateur pour pouvoir modifier le fichier ?
+IDS_ERRORNUM = \n\nErreur n°
+IDS_CANTOPENDIR = \nImpossible d'ouvrir le répertoire !
+IDS_INVALIDCP = Codepage invalide sélectionnée !
+IDS_MODIFIEDOUT = Le fichier a été modifié en dehors de GreenPad !\nLe recharger ?
+IDS_ZOOMPC = Zoom
+IDS_UNTITLED = sans titre
+IDS_CHARSET_CAPTION = Encodage des caractères :
+IDS_CRLF_CAPTION = Fin de ligne :
+
+[Menu]
+popup.0 = &Fichier
+popup.1 = &Edition
+popup.2 = &Recherche
+popup.3 = &Affichage
+popup.4 = &Aide
+popup.3.4 = &Zoom
+popup.0.13 = Fichiers &récents
+popup.1.11 = &Conversion
+popup.3.6 = &Type de document
+ID_CMD_NEWFILE = &Nouveau fichier\tCtrl+N
+ID_CMD_OPENFILE = &Ouvrir...\tCtrl+O
+ID_CMD_REOPENFILE = &Réouvrir...\tCtrl+R
+ID_CMD_REFRESHFILE = &Actualiser\tF5
+ID_CMD_OPENELEVATED = Ouvrir en tant qu'&administrateur...\tCtrl+L
+ID_CMD_SAVEFILE = &Enregistrer\tCtrl+S
+ID_CMD_SAVEFILEAS = Enregistrer &sous...\tCtrl+Shift+S
+ID_CMD_PRINT = &Imprimer...\tCtrl+P
+ID_CMD_PAGESETUP = &Mise en page...
+ID_CMD_SAVEEXIT = Enregistrer et &quitter\tCtrl+E
+ID_CMD_DISCARDEXIT = &Quitter sans enregistrer\tCtrl+Shift+E
+ID_CMD_EXIT = &Quitter
+ID_CMD_UNDO = &Annuler\tCtrl+Z
+ID_CMD_REDO = &Rétablir\tCtrl+Y
+ID_CMD_CUT = &Couper\tCtrl+X
+ID_CMD_COPY = &Copier\tCtrl+C
+ID_CMD_PASTE = Co&ller\tCtrl+V
+ID_CMD_DELETE = &Supprimer\tDel
+ID_CMD_SELECTALL = &Sélectionner tout\tCtrl+A
+ID_CMD_DATETIME = Insérer date et &heure\tF6
+ID_CMD_UPPERCASE = &Majuscules\tAlt+U
+ID_CMD_LOWERCASE = &Minuscules\tAlt+L
+ID_CMD_INVERTCASE = &Inverser la casse\tAlt+I
+ID_CMD_ASCIIFY = &Réduire en ASCII\tAlt+R
+ID_CMD_TTSPACES = Supprimer les espaces en &fin de ligne\tAlt+W
+ID_CMD_SFCHAR = Supprimer les &premiers caractères\tAlt+Z
+ID_CMD_SLCHAR = Supprimer les &derniers caractères\tAlt+A
+ID_CMD_QUOTE = &Citer\tAlt+Q
+ID_CMD_UNQUOTE = &Retirer les guillemets\tAlt+N
+ID_CMD_FIND = &Rechercher\tCtrl+F
+ID_CMD_FINDNEXT = Rechercher le s&uivant\tF3
+ID_CMD_FINDPREV = Rechercher le &précédent\tShift+F3
+ID_CMD_JUMP = &Aller à la ligne\tCtrl+J
+ID_CMD_GREP = &Grep...\tCtrl+G
+ID_CMD_OPENSELECTION = &Ouvrir la sélection...\tF7
+ID_CMD_NOWRAP = &Pas de retour à la ligne\tCtrl+1
+ID_CMD_WRAPWIDTH = Retour à la ligne &automatique\tCtrl+2
+ID_CMD_WRAPWINDOW = Retour à la ligne au &bord droit\tCtrl+3
+ID_CMD_ZOOMDLG = &Paramètres de zoom...
+ID_CMD_ZOOMRZ = &Réinitialiser le zoom\tCtrl+0
+ID_CMD_ZOOMUP = &Augmenter le zoom\tCtrl+Up
+ID_CMD_ZOOMDN = &Diminuer le zoom\tCtrl+Down
+ID_CMD_CONFIG = &Paramètres...
+ID_CMD_STATUSBAR = &Barre d'état
+ID_CMD_READONLY = Mode &lecture seule
+ID_CMD_HELP = &Aide contextuelle...\tF1
+ID_CMD_HELPABOUT = &À propos
+
+[Dialog.IDD_REOPENDLG]
+Caption = Réouvrir le fichier
+IDOK = OK
+IDCANCEL = Annuler
+static.0 = &Encodage des caractères :
+
+[Dialog.IDD_JUMP]
+Caption = Aller à la ligne
+IDOK = &OK
+IDC_LINLABEL = &Ligne
+
+[Dialog.IDD_FINDREPLACE]
+Caption = Rechercher et remplacer
+ID_FINDNEXT = &Rechercher
+ID_FINDPREV = Rechercher le &précédent
+ID_REPLACENEXT = &Remplacer
+ID_REPLACEALL = Remplacer &tout
+IDCANCEL = Fermer
+IDC_IGNORECASE = &Ignorer la casse
+IDC_REGEXP = &Expression régulière
+static.0 = &Rechercher :
+static.1 = &Remplacer par :
+static.2 = &Options
+
+[Dialog.IDD_ABOUTDLG]
+Caption = À propos de GreenPad
+IDCANCEL = Fermer
+
+[Dialog.IDD_ADDDOCTYPE]
+Caption = Nouveau type de document
+IDOK = OK
+IDCANCEL = Annuler
+static.0 = &Nom :
+static.1 = &Extension :
+
+[Dialog.IDD_CONFIG]
+Caption = Options
+IDOK = OK
+IDCANCEL = Annuler
+IDC_UNDOLIM1 = Illimité
+IDC_COUNTBYLETTER = Caractères
+IDC_COUNTBYLETTER2 = Positions
+IDC_OPENSAME = &Même fenêtre
+IDC_REMSIZE = &Mémoriser la taille
+IDC_REMPLACE = &Mémoriser la position
+IDC_NEWDOCTYPE = Aj.
+IDC_DELDOCTYPE = Sup.
+IDC_EDITKWD = éd.
+IDC_EDITLAY = éd.
+static.0 = Général
+static.1 = &Annulation :
+static.2 = fois
+static.3 = &Colonne par :
+static.4 = Fichiers &récents :
+static.5 = &Filtre texte :
+static.6 = Grep &externe :
+static.7 = Mode &nouveau :
+static.8 = &Types de document
+static.9 = &Modèle :
+static.10 = &Mot-clé :
+static.11 = &Mise en page :
