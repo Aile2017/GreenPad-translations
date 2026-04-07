@@ -1,0 +1,164 @@
+# GreenPad Language File
+# Language: German (Germany)
+# Encoding: UTF-8
+
+[Info]
+Language = German
+LangCode = de-DE
+
+[Strings]
+IDS_ASKTOSAVE = Moechten Sie die aktuelle Datei speichern?
+IDS_APPNAME = GreenPad
+IDS_SAVEERROR = Datei konnte nicht gespeichert werden:
+IDS_ALLFILES = Alle Dateien(*.*)
+IDS_TXTFILES = Textdateien
+IDS_OPENERROR = Datei konnte nicht geoeffnet werden:
+IDS_DEFAULT = (Standard)
+IDS_NOTFOUND = Zeichenfolge nicht gefunden.
+IDS_REPLACEALLDONE = %d-mal ersetzt.
+IDS_OKTODEL =  wird entfernt. OK?
+IDS_LOADING = Datei wird geladen...
+IDS_NOTFOUNDDOWN = Zeichenfolge nicht gefunden.\nSuche von oben fortsetzen?
+IDS_NOTFOUNDUP = Zeichenfolge nicht gefunden.\nSuche von unten fortsetzen?
+IDS_NOTFOUND_SELDOWN = Zeichenfolge in der Auswahl nicht gefunden.\nVom Anfang der Auswahl fortsetzen?
+IDS_NOTFOUND_SELUP = Zeichenfolge in der Auswahl nicht gefunden.\nVom Ende der Auswahl fortsetzen?
+IDS_NOWRITEACESS = \nSchreibzugriff verweigert!\n\nMit Administratorrechten oeffnen, damit die Datei geaendert werden kann?
+IDS_ERRORNUM = \n\nFehler #
+IDS_CANTOPENDIR = \nVerzeichnis kann nicht geoeffnet werden!
+IDS_INVALIDCP = Ungueltige Codepage ausgewaehlt!
+IDS_MODIFIEDOUT = Datei wurde ausserhalb von GreenPad geaendert!\nNeu laden?
+IDS_INSERTUNI = Unicode einfuegen
+IDS_INSSERT = &Einfuegen
+IDS_ZOOMPC = Zoom
+IDS_UNTITLED = unbenannt
+IDS_CHARSET_CAPTION = Zeichenkodierung:
+IDS_CRLF_CAPTION = Zeilenende:
+IDS_EXFILTER_FAILED = Externer Filter fehlgeschlagen (Exit-Code: %d)
+
+[Menu]
+popup.0 = &Datei
+popup.1 = &Bearbeiten
+popup.2 = &Suchen
+popup.3 = &Ansicht
+popup.4 = &Hilfe
+popup.3.4 = &Zoom
+popup.0.13 = Zu&letzt verwendete Dateien
+popup.1.13 = &Aendern
+popup.3.6 = &Dokumenttyp
+ID_CMD_NEWFILE = &Neue Datei\tCtrl+N
+ID_CMD_OPENFILE = &Oeffnen...\tCtrl+O
+ID_CMD_REOPENFILE = Erneut &oeffnen...\tCtrl+R
+ID_CMD_REFRESHFILE = &Aktualisieren\tF5
+ID_CMD_OPENELEVATED = Mit &Administratorrechten oeffnen...\tCtrl+L
+ID_CMD_SAVEFILE = &Speichern\tCtrl+S
+ID_CMD_SAVEFILEAS = Speichern &unter...\tCtrl+Shift+S
+ID_CMD_PRINT = &Drucken...\tCtrl+P
+ID_CMD_PAGESETUP = Seiten&einstellungen...
+ID_CMD_SAVEEXIT = Speichern und &beenden\tCtrl+E
+ID_CMD_DISCARDEXIT = &Verwerfen und beenden\tCtrl+Shift+E
+ID_CMD_EXIT = B&eenden
+ID_CMD_UNDO = &Rueckgaengig\tCtrl+Z
+ID_CMD_REDO = &Wiederholen\tCtrl+Y
+ID_CMD_CUT = Ausschnei&den\tCtrl+X
+ID_CMD_COPY = &Kopieren\tCtrl+C
+ID_CMD_PASTE = &Einfuegen\tCtrl+V
+ID_CMD_DELETE = &Loeschen\tDel
+ID_CMD_SELECTALL = &Alles auswaehlen\tCtrl+A
+ID_CMD_DATETIME = Datum&&&Uhrzeit einfuegen\tF6
+ID_CMD_INSERTUNI = U&nicode einfuegen...\tCtrl+I
+ID_CMD_UPPERCASE = &Grossbuchstaben\tAlt+U
+ID_CMD_LOWERCASE = &Kleinbuchstaben\tAlt+L
+ID_CMD_INVERTCASE = Gross-/Kleinschreibung &umkehren\tAlt+I
+ID_CMD_ASCIIFY = Auf ASCII &reduzieren\tAlt+R
+ID_CMD_TTSPACES = Nachgestellte Leerzeichen &entfernen\tAlt+W
+ID_CMD_SFCHAR = Erste Zeichen ent&fernen\tAlt+Z
+ID_CMD_SLCHAR = Letzte Zeichen entfer&nen\tAlt+A
+ID_CMD_QUOTE = &In Anfuehrungszeichen\tAlt+Q
+ID_CMD_UNQUOTE = Anfuehrungszeichen ent&fernen\tAlt+N
+ID_CMD_EXFILTER = E&xterner Filter...\tCtrl+\
+ID_CMD_FIND = &Suchen\tCtrl+F
+ID_CMD_FINDNEXT = Weite&rsuchen\tF3
+ID_CMD_FINDPREV = Vorheriges su&chen\tShift+F3
+ID_CMD_JUMP = Zu Zeile &springen\tCtrl+J
+ID_CMD_GREP = &Grep...\tCtrl+G
+ID_CMD_OPENSELECTION = Auswahl &oeffnen...\tF7
+ID_CMD_NOWRAP = &Kein Umbruch\tCtrl+1
+ID_CMD_WRAPWIDTH = Umbruch bei &Zeichenposition #\tCtrl+2
+ID_CMD_WRAPWINDOW = Umbruch am &rechten Rand\tCtrl+3
+ID_CMD_ZOOMDLG = Zoom &festlegen...
+ID_CMD_ZOOMRZ = Zoom zu&ruecksetzen\tCtrl+0
+ID_CMD_ZOOMUP = Zoom &vergroessern\tCtrl+Up
+ID_CMD_ZOOMDN = Zoom ver&kleinern\tCtrl+Down
+ID_CMD_CONFIG = &Einstellungen...
+ID_CMD_STATUSBAR = Status&leiste
+ID_CMD_READONLY = &Schreibschutzmodus
+ID_CMD_HELP = &Kontexthilfe...\tF1
+ID_CMD_HELPABOUT = &Info
+
+[Dialog.IDD_REOPENDLG]
+Caption = Datei erneut oeffnen
+IDOK = OK
+IDCANCEL = Abbrechen
+static.0 = &Zeichenkodierung:
+
+[Dialog.IDD_JUMP]
+Caption = Gehe zu
+IDOK = &Gehe!
+IDC_LINLABEL = &Zeile:
+
+[Dialog.IDD_FINDREPLACE]
+Caption = Suchen & Ersetzen
+ID_FINDNEXT = &Suchen
+ID_FINDPREV = Vorheriges Su&chen
+ID_REPLACENEXT = &Ersetzen
+ID_REPLACEALL = Alle e&rsetzen
+IDCANCEL = Schliessen
+IDC_IGNORECASE = Gross-/Kleinschreibung &ignorieren
+IDC_REGEXP = Regulaerer Aus&druck
+static.0 = Su&chen:
+static.1 = E&rsetzen:
+static.2 = &Optionen
+
+[Dialog.IDD_EXFILTER]
+Caption = Externer Filter
+static.0 = &Befehl:
+IDOK = &Ausfuehren
+IDCANCEL = Abbrechen
+
+[Dialog.IDD_ABOUTDLG]
+Caption = Ueber GreenPad
+IDCANCEL = Schliessen
+
+[Dialog.IDD_ADDDOCTYPE]
+Caption = Neuer Dokumenttyp
+IDOK = OK
+IDCANCEL = Abbrechen
+static.0 = &Name:
+static.1 = &Erweiterung:
+
+[Dialog.IDD_CONFIG]
+Caption = Konfiguration
+IDOK = OK
+IDCANCEL = Abbrechen
+IDC_UNDOLIM1 = Unbegrenzt
+IDC_COUNTBYLETTER = Buchstaben
+IDC_COUNTBYLETTER2 = Positionen
+IDC_OPENSAME = Im selben &Fenster oeffnen
+IDC_REMSIZE = Fenster&groesse merken
+IDC_REMPLACE = Fenster&position merken
+IDC_NEWDOCTYPE = Hinzufuegen
+IDC_DELDOCTYPE = Loeschen
+IDC_EDITKWD = bearbeiten
+IDC_EDITLAY = bearbeiten
+static.0 = Allgemein
+static.1 = &Rueckgaengig:
+static.2 = mal
+static.3 = &Spalte nach:
+static.4 = M&RU-Dateianzahl:
+static.5 = Textdatei&filter:
+static.6 = Externes &Grep-Programm:
+static.7 = Modus fuer &neue Datei:
+static.8 = &Dokumenttypen
+static.9 = M&uster:
+static.10 = &Schluesselwort:
+static.11 = &Layout:
