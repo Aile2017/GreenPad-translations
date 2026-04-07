@@ -28,12 +28,12 @@ IDS_ZOOMPC = Zoom
 IDS_UNTITLED = sans titre
 IDS_CHARSET_CAPTION = Encodage des caractères :
 IDS_CRLF_CAPTION = Fin de ligne :
-IDS_NOTFOUNDUP = [TODO] String Not Found.\nContinue searching from the bottom?
-IDS_NOTFOUND_SELDOWN = [TODO] String Not Found in selection.\nContinue from beginning of selection?
-IDS_NOTFOUND_SELUP = [TODO] String Not Found in selection.\nContinue from end of selection?
-IDS_INSERTUNI = [TODO] Insert Unicode
-IDS_INSSERT = [TODO] &Insert
-IDS_EXFILTER_FAILED = [TODO] External filter failed (exit code: %d)
+IDS_NOTFOUNDUP = Chaîne non trouvée.\nContinuer la recherche depuis la fin ?
+IDS_NOTFOUND_SELDOWN = Chaîne non trouvée dans la sélection.\nContinuer depuis le début de la sélection ?
+IDS_NOTFOUND_SELUP = Chaîne non trouvée dans la sélection.\nContinuer depuis la fin de la sélection ?
+IDS_INSERTUNI = Insérer Unicode
+IDS_INSSERT = &Insérer
+IDS_EXFILTER_FAILED = Le filtre externe a échoué (code de sortie : %d)
 
 [Menu]
 popup.0 = &Fichier
@@ -92,9 +92,9 @@ ID_CMD_STATUSBAR = &Barre d'état
 ID_CMD_READONLY = Mode &lecture seule
 ID_CMD_HELP = &Aide contextuelle...\tF1
 ID_CMD_HELPABOUT = &À propos
-popup.1.13 = [TODO] &Modify
-ID_CMD_INSERTUNI = [TODO] Insert U&nicode...\tCtrl+I
-ID_CMD_EXFILTER = [TODO] E&xternal Filter...\tCtrl+\
+popup.1.13 = &Modifier
+ID_CMD_INSERTUNI = Insérer U&nicode...\tCtrl+I
+ID_CMD_EXFILTER = Filtre e&xterne...\tCtrl+\
 
 [Dialog.IDD_REOPENDLG]
 Caption = Réouvrir le fichier
@@ -159,7 +159,7 @@ static.10 = &Mot-clé :
 static.11 = &Mise en page :
 
 [Dialog.IDD_EXFILTER]
-Caption = [TODO] External Filter
-static.0 = [TODO] &Command:
-IDOK = [TODO] &Run
-IDCANCEL = [TODO] Cancel
+Caption = Filtre externe
+static.0 = &Commande :
+IDOK = &Exécuter
+IDCANCEL = Annuler

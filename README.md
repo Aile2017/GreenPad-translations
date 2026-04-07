@@ -17,6 +17,7 @@ In addition to the 6 languages maintained in the upstream repository (English, J
 | `ko-KR.lng` | Korean |
 | `ru-RU.lng` | Russian |
 | `fr-FR.lng` | French |
+| `de-DE.lng` | German |
 
 ---
 
