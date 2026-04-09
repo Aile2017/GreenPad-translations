@@ -94,6 +94,7 @@ ID_CMD_STATUSBAR = Status&leiste
 ID_CMD_READONLY = &Schreibschutzmodus
 ID_CMD_HELP = &Kontexthilfe...\tF1
 ID_CMD_HELPABOUT = &Info
+ID_CMD_CHOOSEFONT = [TODO] &Font...
 
 [Dialog.IDD_REOPENDLG]
 Caption = Datei neu oeffnen
