@@ -95,7 +95,7 @@ ID_CMD_HELPABOUT = &À propos
 popup.1.13 = &Modifier
 ID_CMD_INSERTUNI = Insérer U&nicode...\tCtrl+I
 ID_CMD_EXFILTER = Filtre e&xterne...\tCtrl+\
-ID_CMD_CHOOSEFONT = [TODO] &Font...
+ID_CMD_CHOOSEFONT = &Police...
 
 [Dialog.IDD_REOPENDLG]
 Caption = Reouvrir fichier
