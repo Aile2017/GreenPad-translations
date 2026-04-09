@@ -16,7 +16,7 @@ jobs:
 
       - name: Download base lang files from upstream
         run: |
-          BASE_URL="https://raw.githubusercontent.com/Aile2017/GreenPad/main/lang"
+          BASE_URL="https://raw.githubusercontent.com/Aile2017/GreenPad/main/release/lang"
           for lang in en-US ja-JP zh-CN zh-TW ko-KR ru-RU; do
             echo "Downloading $lang.lng ..."
             curl -fsSL "$BASE_URL/$lang.lng" -o "lang/$lang.lng"
