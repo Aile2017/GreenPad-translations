@@ -19,20 +19,20 @@ IDS_REPLACEALLDONE = %d fois remplacé.
 IDS_OKTODEL = sera supprimé. OK ?
 IDS_LOADING = Chargement du fichier...
 IDS_NOTFOUNDDOWN = Chaîne non trouvée.\nContinuer la recherche depuis le début ?
+IDS_NOTFOUND_SELDOWN = Chaîne non trouvée dans la sélection.\nContinuer depuis le début de la sélection ?
+IDS_NOTFOUNDUP = Chaîne non trouvée.\nContinuer la recherche depuis la fin ?
+IDS_NOTFOUND_SELUP = Chaîne non trouvée dans la sélection.\nContinuer depuis la fin de la sélection ?
 IDS_NOWRITEACESS = \nAccès en écriture refusé !\n\nOuvrir en tant qu'administrateur pour pouvoir modifier le fichier ?
 IDS_ERRORNUM = \n\nErreur n°
 IDS_CANTOPENDIR = \nImpossible d'ouvrir le répertoire !
 IDS_INVALIDCP = Codepage invalide sélectionnée !
 IDS_MODIFIEDOUT = Le fichier a été modifié en dehors de GreenPad !\nLe recharger ?
+IDS_INSERTUNI = Insérer Unicode
+IDS_INSSERT = &Insérer
 IDS_ZOOMPC = Zoom
 IDS_UNTITLED = sans titre
 IDS_CHARSET_CAPTION = Encodage :
 IDS_CRLF_CAPTION = Fin de ligne :
-IDS_NOTFOUNDUP = Chaîne non trouvée.\nContinuer la recherche depuis la fin ?
-IDS_NOTFOUND_SELDOWN = Chaîne non trouvée dans la sélection.\nContinuer depuis le début de la sélection ?
-IDS_NOTFOUND_SELUP = Chaîne non trouvée dans la sélection.\nContinuer depuis la fin de la sélection ?
-IDS_INSERTUNI = Insérer Unicode
-IDS_INSSERT = &Insérer
 IDS_EXFILTER_FAILED = Le filtre externe a échoué (code de sortie : %d)
 
 [Menu]
@@ -43,7 +43,7 @@ popup.3 = &Affichage
 popup.4 = &Aide
 popup.3.4 = &Zoom
 popup.0.13 = Fichiers &récents
-popup.1.11 = &Conversion
+popup.1.13 = &Modifier
 popup.3.6 = &Type de document
 ID_CMD_NEWFILE = &Nouveau fichier\tCtrl+N
 ID_CMD_OPENFILE = &Ouvrir...\tCtrl+O
@@ -65,6 +65,7 @@ ID_CMD_PASTE = Co&ller\tCtrl+V
 ID_CMD_DELETE = &Supprimer\tDel
 ID_CMD_SELECTALL = &Sélectionner tout\tCtrl+A
 ID_CMD_DATETIME = Insérer date et &heure\tF6
+ID_CMD_INSERTUNI = Insérer U&nicode...\tCtrl+I
 ID_CMD_UPPERCASE = &Majuscules\tAlt+U
 ID_CMD_LOWERCASE = &Minuscules\tAlt+L
 ID_CMD_INVERTCASE = &Inverser la casse\tAlt+I
@@ -74,6 +75,7 @@ ID_CMD_SFCHAR = Supprimer les &premiers caractères\tAlt+Z
 ID_CMD_SLCHAR = Supprimer les &derniers caractères\tAlt+A
 ID_CMD_QUOTE = &Citer\tAlt+Q
 ID_CMD_UNQUOTE = &Retirer les guillemets\tAlt+N
+ID_CMD_EXFILTER = Filtre e&xterne...\tCtrl+\
 ID_CMD_FIND = &Rechercher\tCtrl+F
 ID_CMD_FINDNEXT = Rechercher le s&uivant\tF3
 ID_CMD_FINDPREV = Rechercher &prec.\tShift+F3
@@ -92,9 +94,6 @@ ID_CMD_STATUSBAR = &Barre d'état
 ID_CMD_READONLY = Mode &lecture seule
 ID_CMD_HELP = &Aide contextuelle...\tF1
 ID_CMD_HELPABOUT = &À propos
-popup.1.13 = &Modifier
-ID_CMD_INSERTUNI = Insérer U&nicode...\tCtrl+I
-ID_CMD_EXFILTER = Filtre e&xterne...\tCtrl+\
 ID_CMD_CHOOSEFONT = &Police...
 
 [Dialog.IDD_REOPENDLG]
@@ -121,6 +120,21 @@ static.0 = &Rechercher :
 static.1 = &Remplacer par :
 static.2 = &Options
 
+[Dialog.IDD_NEWFILENAME]
+Caption = Nouveau fichier
+static.0 = &Nom :
+IDOK = OK
+IDCANCEL = Annuler
+
+[Dialog.IDD_EXFILTER]
+Caption = Filtre externe
+static.0 = &Commande :
+IDOK = &Exécuter
+IDCANCEL = Annuler
+IDC_FILTERDELBTN = Sup.
+IDC_FILTERUPBTN = Haut
+IDC_FILTERDOWNBTN = Bas
+
 [Dialog.IDD_ABOUTDLG]
 Caption = À propos de GreenPad
 IDCANCEL = Fermer
@@ -144,8 +158,12 @@ IDC_REMSIZE = &Mémoriser la taille
 IDC_REMPLACE = &Mémoriser la position
 IDC_NEWDOCTYPE = Aj.
 IDC_DELDOCTYPE = Sup.
-IDC_EDITKWD = éd.
-IDC_EDITLAY = éd.
+IDC_ADDKWD = Aj.
+IDC_DELKWD = Sup.
+IDC_EDITKWD = Éd.
+IDC_ADDLAY = Aj.
+IDC_DELLAY = Sup.
+IDC_EDITLAY = Éd.
 static.0 = Général
 static.1 = &Annulation :
 static.2 = fois
@@ -158,19 +176,6 @@ static.8 = &Types de document
 static.9 = &Modèle :
 static.10 = &Mot-clé :
 static.11 = &Mise en page :
-IDC_ADDKWD = [TODO] Add
-IDC_DELKWD = [TODO] Del
-IDC_ADDLAY = [TODO] Add
-IDC_DELLAY = [TODO] Del
-
-[Dialog.IDD_EXFILTER]
-Caption = Filtre externe
-static.0 = &Commande :
-IDOK = &Exécuter
-IDCANCEL = Annuler
-IDC_FILTERDELBTN = [TODO] Del
-IDC_FILTERUPBTN = [TODO] Up
-IDC_FILTERDOWNBTN = [TODO] Down
 
 [Dialog.IDD_EDITLAYOUT]
 Caption = Modifier la mise en page
@@ -200,9 +205,3 @@ IDC_LAY_WRAP_RIGHT = Bord droit
 IDC_LAY_WRAP_WIDTH = Largeur :
 IDC_LAY_SMARTWRAP = Mot
 IDC_LAY_WRAP_CHAR = Caractère
-
-[Dialog.IDD_NEWFILENAME]
-Caption = [TODO] New File
-static.0 = [TODO] &Name:
-IDOK = [TODO] OK
-IDCANCEL = [TODO] Cancel

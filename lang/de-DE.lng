@@ -120,14 +120,20 @@ static.0 = Su&chen:
 static.1 = E&rsetzen:
 static.2 = &Optionen
 
+[Dialog.IDD_NEWFILENAME]
+Caption = Neue Datei
+static.0 = &Name:
+IDOK = OK
+IDCANCEL = Abbrechen
+
 [Dialog.IDD_EXFILTER]
 Caption = Externer Filter
 static.0 = &Befehl:
 IDOK = &Ausfuehren
 IDCANCEL = Abbrechen
-IDC_FILTERDELBTN = [TODO] Del
-IDC_FILTERUPBTN = [TODO] Up
-IDC_FILTERDOWNBTN = [TODO] Down
+IDC_FILTERDELBTN = Loesch
+IDC_FILTERUPBTN = Hoch
+IDC_FILTERDOWNBTN = Runter
 
 [Dialog.IDD_ABOUTDLG]
 Caption = Ueber GreenPad
@@ -152,7 +158,11 @@ IDC_REMSIZE = Fenster&groesse merken
 IDC_REMPLACE = Fenster&position merken
 IDC_NEWDOCTYPE = Neu
 IDC_DELDOCTYPE = Loesch
+IDC_ADDKWD = Hinzu
+IDC_DELKWD = Loesch
 IDC_EDITKWD = Edit
+IDC_ADDLAY = Hinzu
+IDC_DELLAY = Loesch
 IDC_EDITLAY = Edit
 static.0 = Allgemein
 static.1 = &Rueckgaengig:
@@ -166,10 +176,6 @@ static.8 = &Dokumenttypen
 static.9 = M&uster:
 static.10 = &Keyword:
 static.11 = &Layout:
-IDC_ADDKWD = [TODO] Add
-IDC_DELKWD = [TODO] Del
-IDC_ADDLAY = [TODO] Add
-IDC_DELLAY = [TODO] Del
 
 [Dialog.IDD_EDITLAYOUT]
 Caption = Layout bearbeiten
@@ -199,9 +205,3 @@ IDC_LAY_WRAP_RIGHT = Rechter Rand
 IDC_LAY_WRAP_WIDTH = Breite:
 IDC_LAY_SMARTWRAP = Wort
 IDC_LAY_WRAP_CHAR = Zeichen
-
-[Dialog.IDD_NEWFILENAME]
-Caption = [TODO] New File
-static.0 = [TODO] &Name:
-IDOK = [TODO] OK
-IDCANCEL = [TODO] Cancel
