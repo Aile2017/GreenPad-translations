@@ -158,12 +158,19 @@ static.8 = &Types de document
 static.9 = &Modèle :
 static.10 = &Mot-clé :
 static.11 = &Mise en page :
+IDC_ADDKWD = [TODO] Add
+IDC_DELKWD = [TODO] Del
+IDC_ADDLAY = [TODO] Add
+IDC_DELLAY = [TODO] Del
 
 [Dialog.IDD_EXFILTER]
 Caption = Filtre externe
 static.0 = &Commande :
 IDOK = &Exécuter
 IDCANCEL = Annuler
+IDC_FILTERDELBTN = [TODO] Del
+IDC_FILTERUPBTN = [TODO] Up
+IDC_FILTERDOWNBTN = [TODO] Down
 
 [Dialog.IDD_EDITLAYOUT]
 Caption = Modifier la mise en page
@@ -193,3 +200,9 @@ IDC_LAY_WRAP_RIGHT = Bord droit
 IDC_LAY_WRAP_WIDTH = Largeur :
 IDC_LAY_SMARTWRAP = Mot
 IDC_LAY_WRAP_CHAR = Caractère
+
+[Dialog.IDD_NEWFILENAME]
+Caption = [TODO] New File
+static.0 = [TODO] &Name:
+IDOK = [TODO] OK
+IDCANCEL = [TODO] Cancel

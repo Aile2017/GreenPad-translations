@@ -125,6 +125,9 @@ Caption = 27
 static.0 = 19
 IDOK = 22
 IDCANCEL = 15
+IDC_FILTERDELBTN = [TODO] Del
+IDC_FILTERUPBTN = [TODO] Up
+IDC_FILTERDOWNBTN = [TODO] Down
 
 [Dialog.IDD_ABOUTDLG]
 Caption = 21
@@ -163,6 +166,10 @@ static.8 = 30
 static.9 = 14
 static.10 = 16
 static.11 = 16
+IDC_ADDKWD = [TODO] Add
+IDC_DELKWD = [TODO] Del
+IDC_ADDLAY = [TODO] Add
+IDC_DELLAY = [TODO] Del
 
 [Dialog.IDD_EDITLAYOUT]
 Caption = 27
@@ -192,3 +199,9 @@ IDC_LAY_WRAP_RIGHT = 21
 IDC_LAY_WRAP_WIDTH = 13
 IDC_LAY_SMARTWRAP = 10
 IDC_LAY_WRAP_CHAR = 12
+
+[Dialog.IDD_NEWFILENAME]
+Caption = [TODO] New File
+static.0 = [TODO] &Name:
+IDOK = [TODO] OK
+IDCANCEL = [TODO] Cancel

@@ -125,6 +125,9 @@ Caption = Externer Filter
 static.0 = &Befehl:
 IDOK = &Ausfuehren
 IDCANCEL = Abbrechen
+IDC_FILTERDELBTN = [TODO] Del
+IDC_FILTERUPBTN = [TODO] Up
+IDC_FILTERDOWNBTN = [TODO] Down
 
 [Dialog.IDD_ABOUTDLG]
 Caption = Ueber GreenPad
@@ -163,6 +166,10 @@ static.8 = &Dokumenttypen
 static.9 = M&uster:
 static.10 = &Keyword:
 static.11 = &Layout:
+IDC_ADDKWD = [TODO] Add
+IDC_DELKWD = [TODO] Del
+IDC_ADDLAY = [TODO] Add
+IDC_DELLAY = [TODO] Del
 
 [Dialog.IDD_EDITLAYOUT]
 Caption = Layout bearbeiten
@@ -192,3 +199,9 @@ IDC_LAY_WRAP_RIGHT = Rechter Rand
 IDC_LAY_WRAP_WIDTH = Breite:
 IDC_LAY_SMARTWRAP = Wort
 IDC_LAY_WRAP_CHAR = Zeichen
+
+[Dialog.IDD_NEWFILENAME]
+Caption = [TODO] New File
+static.0 = [TODO] &Name:
+IDOK = [TODO] OK
+IDCANCEL = [TODO] Cancel
