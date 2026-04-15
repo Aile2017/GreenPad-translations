@@ -179,6 +179,7 @@ static.11 = &Layout:
 
 [Dialog.IDD_EDITLAYOUT]
 Caption = Layout bearbeiten
+TitleFormat = Layout bearbeiten: %s
 IDOK = OK
 IDCANCEL = Abbrechen
 static.0 = Farben
@@ -205,4 +206,3 @@ IDC_LAY_WRAP_RIGHT = Rechter Rand
 IDC_LAY_WRAP_WIDTH = Breite:
 IDC_LAY_SMARTWRAP = Wort
 IDC_LAY_WRAP_CHAR = Zeichen
-TitleFormat = [TODO] Edit Layout: %s
