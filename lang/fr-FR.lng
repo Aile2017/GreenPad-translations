@@ -96,6 +96,7 @@ ID_CMD_HELP = &Aide contextuelle...\tF1
 ID_CMD_HELPABOUT = &À propos
 ID_CMD_CHOOSEFONT = &Police...
 ID_CMD_EXTCMD = Commande e&xterne\tCtrl+G
+ID_CMD_SHOWLINENO = [TODO] Show &Line Numbers
 
 [Dialog.IDD_REOPENDLG]
 Caption = Reouvrir fichier

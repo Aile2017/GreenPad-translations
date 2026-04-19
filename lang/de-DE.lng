@@ -96,6 +96,7 @@ ID_CMD_HELP = &Kontexthilfe...\tF1
 ID_CMD_HELPABOUT = &Info
 ID_CMD_CHOOSEFONT = &Schriftart...
 ID_CMD_EXTCMD = E&xterner Befehl\tCtrl+G
+ID_CMD_SHOWLINENO = [TODO] Show &Line Numbers
 
 [Dialog.IDD_REOPENDLG]
 Caption = Datei neu oeffnen

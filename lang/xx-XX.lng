@@ -96,6 +96,7 @@ ID_CMD_HELP = 45
 ID_CMD_HELPABOUT = 25
 ID_CMD_CHOOSEFONT = 19
 ID_CMD_EXTCMD = [TODO] E&xternal Command\tCtrl+G
+ID_CMD_SHOWLINENO = [TODO] Show &Line Numbers
 
 [Dialog.IDD_REOPENDLG]
 Caption = 17
