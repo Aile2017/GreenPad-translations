@@ -35,6 +35,8 @@ IDS_CHARSET_CAPTION = Encodage :
 IDS_CRLF_CAPTION = Fin de ligne :
 IDS_EXFILTER_FAILED = Le filtre externe a échoué (code de sortie : %d)
 IDS_EXFILTER_PINFULL = [TODO] Pinned list is full (max: %d).
+IDS_EXFILTER_PINNED = [TODO] Pin
+IDS_EXFILTER_COMMAND = [TODO] Command
 
 [Menu]
 popup.0 = &Fichier
