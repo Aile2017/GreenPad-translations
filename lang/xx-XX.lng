@@ -100,6 +100,8 @@ ID_CMD_HELPABOUT = 25
 ID_CMD_CHOOSEFONT = 19
 ID_CMD_EXTCMD = [TODO] E&xternal Command\tCtrl+G
 ID_CMD_SHOWLINENO = [TODO] Show &Line Numbers
+popup.0.12 = [TODO] R&ecent Files
+ID_CMD_UNDERLINE = [TODO] &Underline Current Line
 
 [Dialog.IDD_REOPENDLG]
 Caption = 17

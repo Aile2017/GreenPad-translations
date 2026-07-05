@@ -45,7 +45,7 @@ popup.2 = 查找(&S)
 popup.3 = 查看(&V)
 popup.4 = 帮助(&H)
 popup.3.4 = 缩放(&Z)
-popup.0.13 = 最近打开的文件(&M)
+popup.0.12 = 最近打开的文件(&M)
 popup.1.13 = 修改(&M)
 popup.3.6 = 文档类型(&T)
 ID_CMD_NEWFILE = 新建(&N)\tCtrl+N
@@ -89,6 +89,7 @@ ID_CMD_HELP = 关联帮助(&C)...\tF1
 ID_CMD_HELPABOUT = 关于(&A)
 ID_CMD_CHOOSEFONT = 字体(&F)...
 ID_CMD_SHOWLINENO = 显示行号(&L)
+ID_CMD_UNDERLINE = 显示当前行下划线(&U)
 
 [Dialog.IDD_REOPENDLG]
 Caption = 重新载入

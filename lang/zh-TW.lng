@@ -45,7 +45,7 @@ popup.2 = 搜尋(&S)
 popup.3 = 檢視(&V)
 popup.4 = 說明(&H)
 popup.3.4 = 縮放(&Z)
-popup.0.13 = 最近開啟的檔案(&M)
+popup.0.12 = 最近開啟的檔案(&M)
 popup.1.13 = 修改(&M)
 popup.3.6 = 檔案類型(&T)
 ID_CMD_NEWFILE = 新增(&N)\tCtrl+N
@@ -89,6 +89,7 @@ ID_CMD_HELP = 關聯說明(&C)...\tF1
 ID_CMD_HELPABOUT = 關於(&A)
 ID_CMD_CHOOSEFONT = 字型(&F)...
 ID_CMD_SHOWLINENO = 顯示行號(&L)
+ID_CMD_UNDERLINE = 顯示目前行底線(&U)
 
 [Dialog.IDD_REOPENDLG]
 Caption = 重新載入
