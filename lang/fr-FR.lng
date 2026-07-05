@@ -19,8 +19,8 @@ IDS_REPLACEALLDONE = %d fois remplacé.
 IDS_OKTODEL = sera supprimé. OK ?
 IDS_LOADING = Chargement du fichier...
 IDS_NOTFOUNDDOWN = Chaîne non trouvée.\nContinuer la recherche depuis le début ?
-IDS_NOTFOUND_SELDOWN = Chaîne non trouvée dans la sélection.\nContinuer depuis le début de la sélection ?
 IDS_NOTFOUNDUP = Chaîne non trouvée.\nContinuer la recherche depuis la fin ?
+IDS_NOTFOUND_SELDOWN = Chaîne non trouvée dans la sélection.\nContinuer depuis le début de la sélection ?
 IDS_NOTFOUND_SELUP = Chaîne non trouvée dans la sélection.\nContinuer depuis la fin de la sélection ?
 IDS_NOWRITEACESS = \nAccès en écriture refusé !\n\nOuvrir en tant qu'administrateur pour pouvoir modifier le fichier ?
 IDS_ERRORNUM = \n\nErreur n°
@@ -34,9 +34,9 @@ IDS_UNTITLED = sans titre
 IDS_CHARSET_CAPTION = Encodage :
 IDS_CRLF_CAPTION = Fin de ligne :
 IDS_EXFILTER_FAILED = Le filtre externe a échoué (code de sortie : %d)
-IDS_EXFILTER_PINFULL = [TODO] Pinned list is full (max: %d).
-IDS_EXFILTER_PINNED = [TODO] Pin
-IDS_EXFILTER_COMMAND = [TODO] Command
+IDS_EXFILTER_PINFULL = La liste des commandes épinglées est pleine (max : %d).
+IDS_EXFILTER_PINNED = Épinglé
+IDS_EXFILTER_COMMAND = Commande
 
 [Menu]
 popup.0 = &Fichier
@@ -45,13 +45,12 @@ popup.2 = &Recherche
 popup.3 = &Affichage
 popup.4 = &Aide
 popup.3.4 = &Zoom
-popup.0.13 = Fichiers &récents
+popup.0.12 = Fichiers &récents
 popup.1.13 = &Modifier
 popup.3.6 = &Type de document
 ID_CMD_NEWFILE = &Nouveau fichier\tCtrl+N
 ID_CMD_OPENFILE = &Ouvrir...\tCtrl+O
 ID_CMD_REOPENFILE = &Réouvrir...\tCtrl+R
-ID_CMD_REFRESHFILE = &Actualiser\tF5
 ID_CMD_OPENELEVATED = Ouvrir en tant qu'&administrateur...\tCtrl+L
 ID_CMD_SAVEFILE = &Enregistrer\tCtrl+S
 ID_CMD_SAVEFILEAS = Enregistrer &sous...\tCtrl+Shift+S
@@ -90,8 +89,7 @@ ID_CMD_HELP = &Aide contextuelle...\tF1
 ID_CMD_HELPABOUT = &À propos
 ID_CMD_CHOOSEFONT = &Police...
 ID_CMD_SHOWLINENO = Afficher les &numéros de ligne
-popup.0.12 = [TODO] R&ecent Files
-ID_CMD_UNDERLINE = [TODO] &Underline Current Line
+ID_CMD_UNDERLINE = So&uligner la ligne courante
 
 [Dialog.IDD_REOPENDLG]
 Caption = Reouvrir fichier
@@ -131,8 +129,8 @@ IDCANCEL = Annuler
 IDC_FILTERDELBTN = Sup.
 IDC_FILTERUPBTN = Haut
 IDC_FILTERDOWNBTN = Bas
-IDC_FILTERPINBTN = [TODO] Pin
-IDC_FILTERPINBTN.unpin = [TODO] Unpin
+IDC_FILTERPINBTN = Épingler
+IDC_FILTERPINBTN.unpin = Détacher
 
 [Dialog.IDD_ABOUTDLG]
 Caption = À propos de GreenPad

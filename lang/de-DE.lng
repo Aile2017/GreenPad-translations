@@ -34,9 +34,9 @@ IDS_UNTITLED = unbenannt
 IDS_CHARSET_CAPTION = Zeichenkodierung:
 IDS_CRLF_CAPTION = Zeilenende:
 IDS_EXFILTER_FAILED = Externer Filter fehlgeschlagen (Exit-Code: %d)
-IDS_EXFILTER_PINFULL = [TODO] Pinned list is full (max: %d).
-IDS_EXFILTER_PINNED = [TODO] Pin
-IDS_EXFILTER_COMMAND = [TODO] Command
+IDS_EXFILTER_PINFULL = Liste der angehefteten Befehle ist voll (max: %d).
+IDS_EXFILTER_PINNED = Angeheftet
+IDS_EXFILTER_COMMAND = Befehl
 
 [Menu]
 popup.0 = &Datei
@@ -45,13 +45,12 @@ popup.2 = &Suchen
 popup.3 = &Ansicht
 popup.4 = &Hilfe
 popup.3.4 = &Zoom
-popup.0.13 = Zu&letzt verwendete Dateien
+popup.0.12 = Zu&letzt verwendete Dateien
 popup.1.13 = &Aendern
 popup.3.6 = &Dokumenttyp
 ID_CMD_NEWFILE = &Neue Datei\tCtrl+N
 ID_CMD_OPENFILE = &Oeffnen...\tCtrl+O
 ID_CMD_REOPENFILE = Erneut &oeffnen...\tCtrl+R
-ID_CMD_REFRESHFILE = &Aktualisieren\tF5
 ID_CMD_OPENELEVATED = Mit &Administratorrechten oeffnen...\tCtrl+L
 ID_CMD_SAVEFILE = &Speichern\tCtrl+S
 ID_CMD_SAVEFILEAS = Speichern &unter...\tCtrl+Shift+S
@@ -90,8 +89,7 @@ ID_CMD_HELP = &Kontexthilfe...\tF1
 ID_CMD_HELPABOUT = &Info
 ID_CMD_CHOOSEFONT = &Schriftart...
 ID_CMD_SHOWLINENO = &Zeilennummern anzeigen
-popup.0.12 = [TODO] R&ecent Files
-ID_CMD_UNDERLINE = [TODO] &Underline Current Line
+ID_CMD_UNDERLINE = Aktuelle Zeile &unterstreichen
 
 [Dialog.IDD_REOPENDLG]
 Caption = Datei neu oeffnen
@@ -131,8 +129,8 @@ IDCANCEL = Abbrechen
 IDC_FILTERDELBTN = Loesch
 IDC_FILTERUPBTN = Hoch
 IDC_FILTERDOWNBTN = Runter
-IDC_FILTERPINBTN = [TODO] Pin
-IDC_FILTERPINBTN.unpin = [TODO] Unpin
+IDC_FILTERPINBTN = Anheften
+IDC_FILTERPINBTN.unpin = Loesen
 
 [Dialog.IDD_ABOUTDLG]
 Caption = Ueber GreenPad
